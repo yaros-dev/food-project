@@ -452,7 +452,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('sex')) {
         sex = localStorage.getItem('sex');
     } else {
-        sex = 'female';
+        sex = 'famale';
         localStorage.setItem('sex', 'female');
     }
 
@@ -480,7 +480,7 @@ window.addEventListener('DOMContentLoaded', () => {
     calcTotal();
 
     function initLocalSettings(selector, activeClass) {
-        const elements = document.querySelector(selector);
+        const elements = document.querySelectorAll(selector);
         elements.forEach(elem => {
             elem.classList.remove(activeClass);
             if (elem.getAttribute('id') === localStorage.getItem('sex')) {
@@ -547,8 +547,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     age = +input.value;
                     break;
             }
-
-
+            
             calcTotal();
         });
     }
@@ -557,13 +556,7 @@ window.addEventListener('DOMContentLoaded', () => {
     getDynamicInfo('#weight');
     getDynamicInfo('#age');
 
-
-
-
-
-
-
-
+ 
 
 });
 
