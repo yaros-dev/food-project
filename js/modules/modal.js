@@ -40,7 +40,6 @@ function modal(triggerSelector, modalSelector, modalTimerId) {
 
 
 
-
   function showModalByScroll() {
     if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
       openModal(modalSelector, modalTimerId);
