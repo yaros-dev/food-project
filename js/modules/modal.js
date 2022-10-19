@@ -1,8 +1,6 @@
  
 function closeModal(modalSelector) {
-  const modal = document.querySelector(modalSelector);
-
-
+  const modal = document.querySelector(modalSelector); 
   modal.classList.add('hide');
   modal.classList.remove('show');
   document.body.style.overflow = '';

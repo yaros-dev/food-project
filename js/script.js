@@ -9,9 +9,7 @@ import modal from './modules/modal';
 import forms from './modules/forms';
 import cards from './modules/cards';
 import calc from './modules/calc';
-import {
-    openModal
-} from './modules/modal';
+import { openModal } from './modules/modal';
 
 window.addEventListener('DOMContentLoaded', () => {
 
